@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Document</title>
+ <style>
+    body{
+        background-image: url(./pngtre.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 900px;
+    }
+    div{
+        width: 23%;
+        height: 403px;
+        background-color: rgb(17, 17, 17);
+        border:2px solid black ;
+        border-radius: 9px;
+        box-shadow: 5px 5px 5px white,-5px -5px 5px white;
+        font-size: medium;
+        position: relative;
+        top: 53px;
+    }
+    #dis{
+        background-color: rgb(241, 241, 188);
+        text-align: right;
+        position: relative;
+        top: 20px;
+        border:2px solid black ;
+        border-radius:5px;
+        font-size: 27px;
+        width:93%;
+        box-shadow: 2px 2px 2px white,-2px -2px 2px white;
+        
+    }
+    #inp{
+        border: 2px solid black;
+        border-radius: 10px;
+        font-size: 33px;
+        position: relative;
+        top: 25px;n
+        width:18%;
+        box-shadow:2px 2px 2px white,-2px -2px 2px white ; 
+        outline: 1px solid rgb(113, 113, 227); 
+    }
+    h1{
+        position: relative;
+        top: 53px;
+        right: 7px;
+    }
+    #inp:hover{
+        color: brown;
+        background-color: rgb(103, 222, 103);
+    }
+   
+   
+ </style>
+</head>
+<body>
+   <Center>
+    <h1>CALCULATOR</h1>
+    <div>     
+    <form id="cals">
+    <input id="dis">
+    <br>
+    <br>
+    <input id="inp" type="button" value="AC" onclick="cals.dis.value=''">
+    <input id="inp" type="button" value="DE" onclick="cals.dis.value=cals.dis.value.slice(0,-1)">
+    <input id="inp" type="button" value="%" onclick="cals.dis.value+='%'">
+    <input id="inp" type="button" value="+" onclick="cals.dis.value+='+'">
+    <br>
+    <br>
+    <input id="inp" type="button" value="1" onclick="cals.dis.value='1'">
+    <input id="inp" type="button" value="2" onclick="cals.dis.value+='2'">
+    <input id="inp" type="button" value="3" onclick="cals.dis.value+='3'">
+    <input id="inp" type="button" value="-" onclick="cals.dis.value+='-'">
+    <br>
+    <br>
+    <input id="inp" type="button" value="5" onclick="cals.dis.value+='5'">
+    <input id="inp" type="button" value="6" onclick="cals.dis.value+='6'">
+    <input id="inp" type="button" value="4" onclick="cals.dis.value='4'">
+    <input id="inp" type="button" value="*" onclick="cals.dis.value+='*'">
+    <br>
+    <br>
+    <input id="inp" type="button" value="7" onclick="cals.dis.value='7'">
+    <input id="inp" type="button" value="8" onclick="cals.dis.value+='8'">
+    <input id="inp" type="button" value="9" onclick="cals.dis.value+='9'">
+    <input id="inp" type="button" value="/" onclick="cals.dis.value+='/'"> 
+    <br>
+    <br>
+    <input id="inp" type="button" value="." onclick="cals.dis.value='.'">
+    <input id="inp" type="button" value="0" onclick="cals.dis.value+='0'">
+    <input id="inp" type="button" value="=" onclick="cals.dis.value=eval(cals.dis.value)">
+    </form>
+</div>
+   </Center> 
+</body>
+</html>
